@@ -61,12 +61,14 @@ body{
     }
 //BRAND
 .nav-side-menu .brand {
-	width:100%;
+	width:250px;
+  position:absolute;
+  transition: margin 0.2s ease-in;
   
 	span{
-		left: 220px;
-		top:9px;
-		position:absolute;
+		left: 99px;
+		top:-3px;
+		position:relative;
 		color: white;
 		font-size: 12px;
 		background-color: #F35958;
@@ -108,7 +110,7 @@ h6{
 //                         USER GREETING
 .user-greeting{
 
-  margin:20px 31px 0px 31px;
+  margin:70px 31px 0px 31px;
   img{
     float: left;
     margin-right: 11px;
@@ -452,7 +454,7 @@ h6{
     top:35px;
     right: 45px;
     margin-top: 10px;
-    transition: all 0.7s linear;
+    transition: all 0.15s linear;
     border-radius:4px;
     box-shadow:0px 0px 5px rgba(86,96,117,0.15);
     ul{
@@ -603,6 +605,7 @@ h6{
     }
   }
   #main-content{
+    position:relative;
     margin-top: -20px;
     transition: margin 0.2s linear;
     z-index: 99;
@@ -610,7 +613,7 @@ h6{
     background-color: #E5E9EC;
     .row{margin-left: 0px;}
     .sm-gutter{
-      padding: 43px 26px 0px 26px;
+      padding: 30px 25px 0px 25px;
     }
     .col-md-4{
       margin-bottom: 10px;
@@ -689,6 +692,7 @@ h6{
   }
     // SECOND LINE
     .col-md-8{
+      overflow: hidden;
       padding-left: 5px;
       padding-right: 5px;
       #sparkline{
@@ -1099,6 +1103,7 @@ h6{
                   }
                 }
                 .col-md-5{
+
                   padding-top: 15px;
                   padding-left: 10px;
                   color: white;
@@ -1264,7 +1269,7 @@ h6{
 
             font-size: 18px !important;
             font-weight: lighter;
-            
+            border-top:none !important;
             input{
               box-shadow:none;
               border:none;

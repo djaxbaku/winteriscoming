@@ -49,15 +49,17 @@ body {
     height: 100%;
     color: white; }
   body .left-menu .nav-side-menu .brand {
-    width: 100%;
+    width: 250px;
+    position: absolute;
+    transition: margin 0.2s ease-in;
     background-color: #22262E;
     padding: 12px 14px;
     display: inline-block;
     font-size: 14px; }
     body .left-menu .nav-side-menu .brand span {
-      left: 220px;
-      top: 9px;
-      position: absolute;
+      left: 99px;
+      top: -3px;
+      position: relative;
       color: white;
       font-size: 12px;
       background-color: #F35958;
@@ -83,7 +85,7 @@ body {
     margin-top: 0px;
     font-weight: bold; }
   body .left-menu .user-greeting {
-    margin: 20px 31px 0px 31px; }
+    margin: 70px 31px 0px 31px; }
     body .left-menu .user-greeting img {
       float: left;
       margin-right: 11px; }
@@ -327,7 +329,7 @@ body {
     top: 35px;
     right: 45px;
     margin-top: 10px;
-    transition: all 0.7s linear;
+    transition: all 0.15s linear;
     border-radius: 4px;
     box-shadow: 0px 0px 5px rgba(86, 96, 117, 0.15); }
     body .settings ul {
@@ -444,6 +446,7 @@ body {
     body .main-chat .favourites .col-md-12:hover {
       background-color: #22262e; }
   body #main-content {
+    position: relative;
     margin-top: -20px;
     transition: margin 0.2s linear;
     z-index: 99;
@@ -452,7 +455,7 @@ body {
     body #main-content .row {
       margin-left: 0px; }
     body #main-content .sm-gutter {
-      padding: 43px 26px 0px 26px; }
+      padding: 30px 25px 0px 25px; }
     body #main-content .col-md-4 {
       margin-bottom: 10px;
       padding-left: 5px;
@@ -514,6 +517,7 @@ body {
     body #main-content .qirmizi {
       background-color: #F35958; }
     body #main-content .col-md-8 {
+      overflow: hidden;
       padding-left: 5px;
       padding-right: 5px; }
       body #main-content .col-md-8 #sparkline canvas {
@@ -930,7 +934,8 @@ body {
         background-color: white; }
         body .fourth-line .col-md-6:nth-child(2) .col-md-5 .col-md-12:first-child {
           font-size: 18px !important;
-          font-weight: lighter; }
+          font-weight: lighter;
+          border-top: none !important; }
           body .fourth-line .col-md-6:nth-child(2) .col-md-5 .col-md-12:first-child input {
             box-shadow: none;
             border: none;
