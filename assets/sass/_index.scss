@@ -306,10 +306,14 @@ h6{
 }
 	//navbar
 	.navbar-inverse{
-		
+
+		border-radius:0px !important;
     
 		background-color: white;
 		border: none;
+    
+    width: 100%;
+ 
 		.input-group-btn{
 			width: 40px !important;
 		}
@@ -319,6 +323,8 @@ h6{
     font-size: 18.5px ; 	
   }
   .navbar-form{
+    margin-top: 14px;
+    margin-bottom: 0px;
    .form-control{
     border: none;
     box-shadow: none;
@@ -333,8 +339,13 @@ h6{
     background-color: white;
   }
 }
-
+.navbar-left{
+  margin-top: 6px;
+}
 .navbar-right{
+  margin-top: 6px;
+  transition: all 0.2s ease-in;
+  margin-right: 6px;
  li:first-child{
 
   a{	
@@ -608,7 +619,7 @@ h6{
     position:relative;
     margin-top: -20px;
     transition: margin 0.2s linear;
-    z-index: 99;
+    z-index: 0;
     margin-right: 0px;
     background-color: #E5E9EC;
     .row{margin-left: 0px;}
@@ -798,6 +809,7 @@ h6{
     .third-line{
       .slider1{
          div {
+          height: 237px;
           transition: all 1s ease;
         }
 
@@ -1592,6 +1604,7 @@ h6{
                      font-family: 'Open Sans';
                     font-size: 12px;
                     font-weight: 600;
+
                     }
                     .gray{
                       font-size: 12px;
@@ -1619,7 +1632,22 @@ h6{
                   }
                 
                 }
+                .col-md-12:hover{
+
+                  .big{
+                    filter: contrast(120%);
+                    transform:  scale(1.1,1.1);
+                    
+                  }
+                }
                 .col-md-12{
+                  overflow:hidden;
+                  
+                  .big{transition: all 0.2s linear;
+                    height: 193px;
+                      width: 100%;
+
+                  }
 
                   padding-left: 0px;
                   padding-right: 0px;
@@ -1630,9 +1658,9 @@ h6{
                     z-index: 1;
                   }
                   .content{
-                    position:relative;
+                    position:relative; 
                     z-index: 2;
-                    padding: 19px 18px 15px 24px;
+                    padding: 19px 0px 15px 0px;
                     p{ 
                       margin-top: 100px;
                       float: right;
@@ -1645,15 +1673,26 @@ h6{
                       font-weight: 600;
                       border-radius:10px; 
                       transition:all 0.2s linear;
+                      margin-bottom: 25px;
+                      margin-right: 20px;
                     }
+
                     p:hover{
                       color: black;
                       background-color: white;
                     }
+                    .col-md-6:last-child{
+                        span{
+                          margin-right: 17px;
+                        }
+                    }
                     .col-md-6{
                       padding-left: 0px;
                       color: #71798a;
-                      margin-top: 25px;
+                      margin-top: 0px;
+                      z-index: 2;
+                      padding-left: 24px;
+                      padding-right:18px;
                       padding-left: -10px;
                       padding-right: 0px;
                       background-color:white;
@@ -1669,12 +1708,14 @@ h6{
                         font-weight: 600;
                         font-size: 15px;
                         span{
+                          margin-right: 20px;
                           color: #71798a;
                           font-size: 12px;
                           font-weight: normal;
                         }
                       }
-                      p{
+                      p{margin-bottom: 0px;
+                        margin-right: 0px;
                         font-size: 12px;
                         margin-top: 10px;
                         border-radius: 15px !important;
@@ -1698,7 +1739,10 @@ h6{
                .col-md-12{
                   padding-left: 0px;
                   padding-right: 0px;
-                  
+                  .big{
+                      height: 193px;
+                      width: 100%;
+                    }
                   .titles{
                     padding-left: 0px  !important;
                     padding-right: 0px !important;
@@ -1711,7 +1755,7 @@ h6{
                         margin-left: 10px;
                         margin-bottom: 10px;
                     }
-
+                    
                     img{
                       
                       margin-right: 10px;
@@ -1774,12 +1818,14 @@ h6{
                   }
                 }
                 .col-md-12:nth-child(2){
+
                   margin-top: 10px;
                   padding-left: 0px;
                   padding-right: 0px;
                   background-color:white;
                   padding-bottom: 30px;
                   img{
+                    
                     position:absolute;
                     z-index: 1;
                   }
