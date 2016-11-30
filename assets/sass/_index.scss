@@ -15,6 +15,10 @@
   margin-right: 260px !important;
   margin-left: 0px !important;
 }
+.right-toggle{
+  position:relative;
+  transform: translateX(-260px);
+}
 .margin-left-toggle{
 
   transition: margin 0.2s ease-in;
@@ -306,7 +310,7 @@ h6{
 }
 	//navbar
 	.navbar-inverse{
-
+    transition: width 0.2s ease;
 		border-radius:0px !important;
     
 		background-color: white;

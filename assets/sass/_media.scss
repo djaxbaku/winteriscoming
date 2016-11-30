@@ -5,7 +5,7 @@
 		opacity: 1 !important;
 		width: 250px !important;
 	}
-	.nav-opener-main-part{
+	.nav-opener-main-part{ 
 		transform:translateX(250px);
 	}
 	#mysidenav{
@@ -14,11 +14,13 @@
 	}
 	
 	#main-part{
+		transition: all 0.2s ease;
 		margin-left: 0px;
 	}
 	.sidenav{
 		width: 0px;
 	}
+
 	.user-greeting{
 		margin-top:20px !important; 
 	}
@@ -89,6 +91,7 @@
 
 // Small devices (landscape phones, 544px and up)
 @media (min-width: 544px) and (max-width: 767px) { 
+
 	body #main-content .third-line .slider1{
 		margin-top: 10px !important;
 	}
@@ -99,6 +102,7 @@
 		.third-line .col-xs-12:first-child{
 		height: 734px;
 	}
+	
 	.nav-opener-main-part{
 
 		transform:translateX(250px);
@@ -130,6 +134,7 @@
 		}
 	}
 	.navbar-right{
+
 		position:absolute;
 		right: 0px;
 		top: 0px;
@@ -186,7 +191,7 @@ body #main-content .third-line .slider1,.slider2{
 		padding-bottom:30px !important;
 	}	
 	.slider1,.slider2,.slider3,.slider4{
-		height: 404px ;
+		height: 404px !important;
 		div{
 			height: 404px !important;
 		}
