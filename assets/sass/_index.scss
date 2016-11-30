@@ -33,19 +33,19 @@ body{
 	//LEFT MENU
 	.left-menu{
 		#mySidenav{
-      transition: all 0.2s ease-in;
+      transition: all 0.2s ease;
     }
 
     .sidenav {
       height: 100%;
-      width: 0;
+      
       position: fixed;
       z-index: 1;
       top: 0;
       left: 0;
       background-color: #111;
       overflow-x: hidden;
-      width: 250px;
+      
     }
 
     .nav-side-menu {
@@ -373,8 +373,9 @@ h6{
     background-color: #fff;
     position:absolute;
     top:45px;
+
     margin-top: 10px;
-    right: 30px;
+    right: 50px;
     width: 328px;
     height: 319px;
     opacity: 0;
@@ -462,8 +463,8 @@ h6{
     min-width: 160px;
     background-color: #fff;
     position:absolute;
-    top:35px;
-    right: 45px;
+    top:45px;
+    right: 65px;
     margin-top: 10px;
     transition: all 0.15s linear;
     border-radius:4px;
@@ -808,7 +809,10 @@ h6{
 // THIRD LINE
     .third-line{
       .slider1{
-        position:relative;
+        ul{
+          padding-left: 0px;
+          list-style-type: none;
+        }
          div {
           height: 237px;
           transition: all 1s ease;
@@ -819,6 +823,7 @@ h6{
       padding-left: 5px !important;
 
       .col-md-6{
+
         overflow: hidden;
         padding-right:0px !important;
         padding-left: 0px !important;
@@ -831,6 +836,7 @@ h6{
             transform: scale(1.1,1.1);
           }
           .col-md-6{
+            
             padding-left: 15px !important;
             color: white;
             padding:20px;
@@ -847,7 +853,8 @@ h6{
             }
           }
           .overlayer-wrapper{
-            margin-top: 140px;
+            position:absolute;
+            bottom:10px;
             color: white;
             padding-bottom: 10px;
             a{
@@ -892,14 +899,46 @@ h6{
       .col-md-3:nth-child(3){
         padding-left: 0px;
         padding-right:0px;
+        position:relative;
+        z-index: 9;
+        ul{
+          list-style-type: none;
+          padding-left: 0px;
+        }
         div{
           background-color:#0090D9;
          }
         h4{ 
+          margin-top: 0px;
           font-family: arial;
           line-height: 2 !important;
-          margin-bottom: 50px;
+         
         }
+        .slide1{
+          position:relative;
+          span{
+            position:absolute;
+            bottom: 20px;
+            img{
+              margin-right: 10px;
+            }
+            
+            
+          }
+
+        }
+        .slide2{
+          position:relative;
+          span{
+            img{
+              margin-right: 10px;
+            }
+          }
+            h4{
+            position:absolute;
+            bottom:10px;
+            }
+          }
         
       }
      .line{
@@ -1900,9 +1939,9 @@ h6{
       }
 
     #main-part{
-      transition: margin 0.2s ease-in;    
+      transition: all 0.2s ease;    
       margin-right: 0px;
-      margin-left: 250px;
+      position:relative !important;
       
     }
 
